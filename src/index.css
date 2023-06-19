@@ -12,5 +12,11 @@
   font-family: Bebas Neue;
   width: 100vw;
   height: 100vh;
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
+    /* height: 100vh;
+    width: 100vw;
+    margin:0;
+    padding:0; */
 }
