@@ -1,0 +1,253 @@
+.video {
+    object-fit: cover;
+    /* object-fit: contain; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    filter: brightness(70%);
+  }
+  
+  .epk-container {
+    /* background: url('/images/img-epk.jpg') center center/cover no-repeat; */
+    z-index: -3;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+  }
+  
+  .epk-container > h1 {
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .epk-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+  }
+
+  .epk-inner {
+    height: 100%;
+    background-color: azure;
+    background-color: rgba(129, 124, 124, 0.5);
+    border-radius: 10px;
+    margin: 12px;
+    z-index: 0;
+  }
+
+
+  .top-info {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    color: white;
+    width: 100%;
+    height: 40%;
+  }
+
+  cover-art {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .cover-art > img {
+    margin-top: 10px;
+    border-radius: 180px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .artist-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio {
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    padding: 12px;
+    color: white;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle ;
+    text-align: center;
+  }
+
+  .bio-text {
+    padding: 0 10%;
+  }
+
+
+  .roles {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    gap: 20px;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    color: white;
+    height: 20%;
+  }
+
+  .works-tile {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  .works-tile > img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .works-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .metrics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    color: white;
+    padding: 10px;
+    height: 30%
+  }
+
+  .metric-icon {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+    transform: scale(2);
+    transition: all .5s ease-in-out;
+  }
+
+  .metric-icon:hover {
+      transition: all .5s ease-in-out;
+      transform: scale(2.5);
+}
+
+  .metric-block {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .metric-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    gap: 24px;
+  }
+
+
+
+  
+  @media screen and (max-width: 960px) {
+
+    .epk-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+
+    .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .works {
+        padding: 20px;
+    }
+  }
+
+
+
+  
+  @media screen and (max-width: 768px) {
+
+    .epk-inner {
+      padding: 20px;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .roles {
+        gap: 10px;
+    }
+
+    .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .works {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    .works-tile > img {
+      height: 100px;
+      width: 100px;
+    }
+
+
+    .cover-art > img {
+      height: 150px;
+      width: 150px;
+    }
+    
+
+    .metrics {
+      margin-top: 10px;
+    }
+
+    .metric-icon {
+      margin-left: 10px;
+    }
+    
+
+  }
+
+
+ 
