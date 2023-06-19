@@ -22,7 +22,10 @@ ul {
   height: 100%;
   background-color: transparent;
   position: absolute;
-  /* overflow: hidden; */
+  overflow: hidden;
+  overscroll-behavior: none;
+  scroll-behavior: none;
+  overflow-x : hidden;
 }
 
 /* .content-hidden {
