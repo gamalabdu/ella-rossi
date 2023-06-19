@@ -51,7 +51,6 @@ function Home() {
 	resize()
 
 
-
 	return (
 		<div className='home-container'>
 			<video src={linenVideo} autoPlay loop muted playsInline={true} disablePictureInPicture={true} />
