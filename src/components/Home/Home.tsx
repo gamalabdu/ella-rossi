@@ -39,7 +39,7 @@ function Home() {
 
 	return (
 		<div className='home-container'>
-			<video src={linenVideo} autoPlay loop muted />
+			<video src={linenVideo} autoPlay loop muted playsInline={true} disablePictureInPicture={true} />
 			<h1>ELLA ROSSI</h1>
 			{/* <p> "Linen" Out Now </p> */}
 
