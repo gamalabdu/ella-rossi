@@ -80,21 +80,21 @@ const Epk = () => {
 
 			<img className='video' src={epkPic} />
 
-
        <div className='epk-inner'>
 
 			<div className='top-info'>
+
 				<div className='cover-art'>
 					<img src={ellaArtistCover} />
 				</div>
 
 				<div className='artist-info'>
-					<h3> @ellarossimusic </h3>
-					<h3> 2 songs | 2 releases </h3>
+					<div> @ellarossimusic </div>
+					<div> 2 songs | 2 releases </div>
 					<div className='roles'>
-						<h4> Song-writer </h4>
-						<h4> Vocalist </h4>
-						<h4> Arrangement </h4>
+						<div> Song-writer </div>
+						<div> · </div>
+						<div> Vocalist </div>
 					</div>
 				</div>
 			</div>
@@ -113,10 +113,9 @@ const Epk = () => {
 						<div key={work.title} className='works-tile'>
 							<img src={work.albumWork} />
 							<div className='works-info'>
-								<h4>{work.title}</h4>
-								<h4>by Ella Rossi </h4>
-								<h4> Single · {work.year} </h4>
-								<h4 style={{ fontSize:"10px"}}> Main Artist , Composer, Song-writer </h4>
+								<div>{work.title}</div>
+								<div> Single · {work.year} </div>
+								<div style={{ fontSize:"10px"}}> Main Artist, Song-writer </div>
 							</div>
 							<div className='metric-icon' onClick={() => goToLink(work.type)}>
 								<AiFillPlayCircle />

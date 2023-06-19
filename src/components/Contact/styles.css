@@ -27,12 +27,6 @@
     color: #fff;
     font-size: 100px;
   }
-  
-  .contact-container > p {
-    margin-top: 8px;
-    color: #fff;
-    font-size: 32px;
-  }
 
   .contact-info {
     display: flex;
@@ -76,6 +70,11 @@
       height: 100%;
       position: fixed;
       z-index: -1;
+    }
+
+
+    .mgmt {
+      font-size: .8em;
     }
 
   }

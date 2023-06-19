@@ -44,15 +44,7 @@ function Home() {
 			{/* <p> "Linen" Out Now </p> */}
 
 			<div
-				className='artistSocialsContainer'
-				style={{
-					display: 'flex',
-					flexDirection: 'row',
-					alignContent: 'center',
-					justifyContent: 'center',
-					gap: '80%',
-					fontSize: '40px',
-				}}>
+				className='artistSocialsContainer'>
 				<button className='artistSocials' onClick={() => goToLink('instagram')}>
 					<FaInstagram />
 				</button>

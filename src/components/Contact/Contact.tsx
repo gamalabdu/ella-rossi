@@ -11,7 +11,8 @@ const Contact = () => {
           <h1>CONTACT</h1>
 
           <div style={{ height: "50%"}} className='contact-info'>
-            <span> MGMT: TRASHDIDTHIS@GMAIL.COM </span>
+
+            <span className='mgmt'> MGMT: TRASHDIDTHIS@GMAIL.COM </span>
             {/* <span> MGMT: TRASHDIDTHIS@GMAIL.COM </span>
             <span> MGMT: TRASHDIDTHIS@GMAIL.COM </span>
             <span> MGMT: TRASHDIDTHIS@GMAIL.COM </span> */}
