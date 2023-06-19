@@ -6,6 +6,7 @@ import { AiOutlineYoutube } from 'react-icons/ai'
 import { TbBrandSpotify } from 'react-icons/tb'
 import { FaTiktok } from 'react-icons/fa'
 import './styles.css'
+import { useWindowResize } from '../../util/useWindowResize'
 
 function Home() {
 
@@ -36,6 +37,18 @@ function Home() {
 				break
 		}
 	}
+
+	// const heightOutput = document.querySelector("#height");
+
+	// window.onresize = function() {
+	// 	document.body.height = window.innerHeight;
+	// }
+
+	// window.onresize();
+
+	const resize = useWindowResize
+
+	resize()
 
 
 
