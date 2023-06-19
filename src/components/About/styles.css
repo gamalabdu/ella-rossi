@@ -80,14 +80,10 @@
   }
   
   @media screen and (max-width: 768px) and ( max-height: 1028px) {
-  
-    .about-container > p {
-      font-size: 30px;
-    }
 
     .about-title {
       color: #fff;
-      font-size: 50px;
+      font-size: 70px;
       height: 20%;
     }
 
