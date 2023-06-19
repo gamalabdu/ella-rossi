@@ -39,7 +39,7 @@
   }
 
   .epk-inner {
-    height: 100vh;
+    height: 100dvh;
     background-color: azure;
     background-color: rgba(129, 124, 124, 0.5);
     border-radius: 10px;
