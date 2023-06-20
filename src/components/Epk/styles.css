@@ -60,10 +60,10 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    gap: 50px;
+    /* gap: 30px; */
     color: white;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   cover-art {
@@ -79,7 +79,7 @@
   }
 
   .artist-info {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,6 +115,8 @@
   .works {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     color: white;
   }
@@ -124,6 +126,7 @@
     flex-direction: row;
     vertical-align: middle;
     align-items: center;
+    margin-top: 10px;
   }
 
   .works-tile > img {
@@ -135,7 +138,9 @@
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    margin-right: 10px;
     font-size: 10px;
+    width: 150px;
   }
 
   .metrics {
@@ -145,13 +150,24 @@
     justify-content: space-evenly;
     gap: 1em;
     color: white;
-    padding: 10px;
     height: 30%
+  }
+
+  .metric-icon-play {
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    transform: scale(2);
+    transition: all .5s ease-in-out;
   }
 
   .metric-icon {
     display: flex;
     vertical-align: middle;
+    align-items: center;
+    justify-content: center;
     transform: scale(2);
     transition: all .5s ease-in-out;
   }
@@ -193,9 +209,6 @@
       z-index: -1;
     }
 
-    .works {
-        padding: 20px;
-    }
   }
 
 
@@ -204,7 +217,6 @@
   @media screen and (max-width: 768px) {
 
     .epk-inner {
-      padding: 20px;
       vertical-align: middle;
       align-items: center;
       justify-content: center;
@@ -214,7 +226,7 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .roles {
@@ -229,12 +241,16 @@
       z-index: -1;
     }
 
-    .works-tile {
-      width: 100%;
-    }
-
     .works {
-        gap: 10px;
+        /* gap: 30px; */
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 10px;
     }
 
     .works-info {
@@ -249,7 +265,7 @@
     }
 
     .cover-art {
-      width: 50%;
+      /* width: 50%; */
     }
 
 
@@ -260,12 +276,15 @@
     
 
     .metrics {
-      margin-top: 10px;
-      font-size: 14px;
+      font-size: 12px;
+      padding: 40px;
     }
 
     .metric-icon {
-      margin-left: 10px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
     }
     
 

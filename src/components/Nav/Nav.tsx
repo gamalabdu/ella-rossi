@@ -27,6 +27,9 @@ const Nav = () => {
 						<li>
 						   <Link to='/contact' preventScrollReset={true} reloadDocument > Contact </Link>
 						</li>
+						<li>
+						   <Link to='/gallery' preventScrollReset={true} reloadDocument > Galleria </Link>
+						</li>
 					</ul>
 				</div>
 			</nav>		

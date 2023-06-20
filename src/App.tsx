@@ -8,6 +8,7 @@ import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import Epk from './components/Epk/Epk';
 import {SafeAreaView} from 'react-native';
+import Gallery from './components/Gallery/Gallery';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="home" element={ <Home />} />
             <Route path="about" element={ <About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="gallery" element={<Gallery />} />
             <Route path="epk" element={<Epk />} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>

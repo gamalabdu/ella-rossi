@@ -30,26 +30,30 @@ const Epk = () => {
 	const metrics = [
 		{
 			social: 'Instagram',
-			followers: 12000,
+			followers: "12,000 +",
 			icon: <FaInstagram />,
+			type: "Followers",
             link: 'https://www.instagram.com/ellarossimusic/',
 		},
 		{
 			social: 'Spotify',
-			followers: 300,
+			followers: "100,000 +",
 			icon: <TbBrandSpotify />,
+			type: "Streams",
             link: 'https://open.spotify.com/artist/5XeDL6Pow4Ag5j9HWv9KHm?si=FJ0XHLupQu-nCVfFfwni9w',
 		},
 		{
 			social: 'TikTok',
-			followers: 300,
+			followers: "10,000 +",
 			icon: <FaTiktok />,
+			type: "Likes",
             link: 'https://www.tiktok.com/@ellarossimusic',
 		},
 		{
 			social: 'YouTube',
-			followers: 1100,
+			followers: "1,000 +",
 			icon: <AiOutlineYoutube />,
+			type: "Subscribers",
             link: 'https://www.youtube.com/@EllaRossi',
 		},
 	]
@@ -82,6 +86,8 @@ const Epk = () => {
 
        <div className='epk-inner'>
 
+			<div style={{fontSize:"50px", color:"white", paddingTop:"20px"}}> EPK </div>
+
 			<div className='top-info'>
 
 				<div className='cover-art'>
@@ -92,18 +98,19 @@ const Epk = () => {
 					<div> @ellarossimusic </div>
 					<div> 2 songs | 2 releases </div>
 					<div className='roles'>
-						<div> Song-writer </div>
-						<div> · </div>
-						<div> Vocalist </div>
+						<div>Song-writer</div>
+						<div>·</div>
+						<div>Vocalist</div>
 					</div>
 				</div>
 			</div>
 
             <div className='bio'>
                 <div className='bio-text'>
-					Ella Rossi, new and upcoming artist from San Deigo, CA is making a
+					Ella Rossi, the new and upcoming artist from San Deigo, CA is making a
 					splash in the RnB world with her unique and smooth sound, capturing
-					the nostolgia of past romances with color and spotenuity of Pop.
+					the nostalgia of past romances with color and spotenuity of Pop. Ella just released 
+					her debut single "Linen" and set to release her debut EP "Heart Eyes" in August 2023. 
                 </div>
 			</div>
 
@@ -115,9 +122,9 @@ const Epk = () => {
 							<div className='works-info'>
 								<div>{work.title}</div>
 								<div> Single · {work.year} </div>
-								<div style={{ fontSize:"10px"}}> Main Artist, Song-writer </div>
+								{/* <div style={{ fontSize:"10px"}}> Main Artist, Song-writer </div> */}
 							</div>
-							<div className='metric-icon' onClick={() => goToLink(work.type)}>
+							<div className='metric-icon-play' onClick={() => goToLink(work.type)}>
 								<AiFillPlayCircle />
 							</div>
 						</div>
@@ -132,7 +139,7 @@ const Epk = () => {
 							<div className='metric-info'>
                             <div className='metric-icon' onClick={ () =>  goToLink(metric.social) }>{metric.icon}</div>
 								<div> {metric.followers} </div>
-								<div>Followers</div>
+								<div>{metric.type}</div>
 							</div>
 						</div>
 					)
