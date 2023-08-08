@@ -73,11 +73,10 @@ const Epk = () => {
 	]
 
 	const goToLink = (linkType: string) => {
+
 		const link = metrics.find(
 			(metric) => metric.social.toLowerCase() === linkType.toLowerCase()
 		)?.link
-
-		console.log(link)
 
 		switch (linkType.toLowerCase()) {
 			case 'youtube':
@@ -87,6 +86,8 @@ const Epk = () => {
 			case 'spotify':
 				return (window.location.href = `${link}`)
 			case 'tiktok':
+				return (window.location.href = `${link}`)
+			case 'facebook':
 				return (window.location.href = `${link}`)
 			default:
 				break
