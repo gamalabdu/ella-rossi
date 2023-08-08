@@ -2,7 +2,7 @@
     object-fit: cover;
     /* object-fit: contain; */
     width: 100%;
-    height: 100svh;
+    height: 100dvh;
     position: fixed;
     z-index: -1;
     filter: brightness(70%);
@@ -11,7 +11,7 @@
   .epk-container {
     /* background: url('/images/img-epk.jpg') center center/cover no-repeat; */
     z-index: -3;
-    min-height: 100svh;
+    height: 100dvh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,12 @@
   }
 
   .epk-inner {
-    height: 100dvh;
+    /* height: 100dvh; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0px;
     background-color: azure;
     background-color: rgba(129, 124, 124, 0.5);
     border-radius: 10px;
@@ -74,8 +79,8 @@
   .cover-art > img {
     margin-top: 10px;
     border-radius: 180px;
-    height: 200px;
-    width: 200px;
+    height: 10em;
+    width: 10em;
   }
 
   .artist-info {
@@ -84,14 +89,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 2em;
   }
 
   .bio {
     display: flex;
     width: 100%;
     height: auto;
-    font-size: 12px;
     padding: 12px;
     color: white;
     height: 10%;
@@ -131,8 +135,8 @@
   }
 
   .works-tile > img {
-    height: 150px;
-    width: 150px;
+    height: 10em;
+    width: 10em;
   }
 
   .works-info {
@@ -348,6 +352,7 @@
     .metrics {
       font-size: 12px;
       padding: 40px;
+      gap: 5em;
     }
 
     .metric-icon {
@@ -359,6 +364,86 @@
     
 
   }
+
+
+
+    
+  @media screen and (max-width: 414px) {
+
+    .epk-inner {
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .roles {
+        gap: 10px;
+    }
+
+    .video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: -1;
+    }
+
+    .works {
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 30px;
+    }
+
+    .works-info {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+    }
+
+    .works-tile > img {
+      height: 3em;
+      width: 3em;
+    }
+
+
+    .cover-art > img {
+      height: 100px;
+      width: 100px;
+    }
+    
+
+    .metrics {
+      font-size: 12px;
+      padding: 40px;
+      gap: 1em;
+    }
+
+    .metric-icon {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .bio {
+      margin-top: 20px;
+    }
+    
+
+  }
+
 
 
  
