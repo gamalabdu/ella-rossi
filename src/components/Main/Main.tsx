@@ -6,11 +6,11 @@ import Nav from '../Nav/Nav'
 
 const Main = () => {
 	return (
-    <div className='main-container'>
-    <Nav />
-    <Outlet />
-    </div>
-  )
+		<div className='main-container'>
+			<Nav />
+			<Outlet />
+		</div>
+	)
 }
 
 export default Main

@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiFillPlayCircle } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
 import { FaTiktok } from 'react-icons/fa'
 import { AiOutlineYoutube } from 'react-icons/ai'
 import { TbBrandSpotify } from 'react-icons/tb'
+import { BsFacebook } from 'react-icons/bs'
 import epkPic from '../../assets/pictures/epkPic.jpg'
 import ellaArtistCover from '../../assets/pictures/ellaArtistCover.jpg'
 import './styles.css'
@@ -12,6 +13,13 @@ const Epk = () => {
 
 	const works = [
 		{
+			title: 'Fairytale',
+            type : 'spotify',
+			year: '2020',
+			link: 'https://open.spotify.com/track/1SMggtx9BCKMmRt46z42FU?si=debf3e9dd9af47c9',
+			albumWork: require('../../assets/pictures/fairytale.png'),
+		},
+		{
 			title: 'Linen',
 			year: '2023',
 			link: 'https://open.spotify.com/track/24EpMJ93iYXIWLiCjfXtWx?si=6cf6dd57bbb342d4',
@@ -19,11 +27,11 @@ const Epk = () => {
 			albumWork: require('../../assets/pictures/linen.jpeg'),
 		},
 		{
-			title: 'Fairytale',
+			title: "Can't You Tell",
             type : 'spotify',
-			year: '2020',
-			link: 'https://open.spotify.com/track/1SMggtx9BCKMmRt46z42FU?si=debf3e9dd9af47c9',
-			albumWork: require('../../assets/pictures/fairytale.png'),
+			year: '2023',
+			link: 'https://open.spotify.com/track/5vQMG5R1AKVHlQvpeUdG4l?si=6f17d94f9ae24cfb',
+			albumWork: require('../../assets/pictures/cantyoutell.jpeg'),
 		},
 	]
 
@@ -56,6 +64,13 @@ const Epk = () => {
 			type: "Subscribers",
             link: 'https://www.youtube.com/@EllaRossi',
 		},
+		{
+			social: 'FaceBook',
+			followers: "8,000 +",
+			icon: <BsFacebook />,
+			type: "Followers",
+            link: 'https://www.facebook.com/ellarossimusic/',
+		},
 	]
 
 
@@ -86,7 +101,7 @@ const Epk = () => {
 
        <div className='epk-inner'>
 
-			<div style={{fontSize:"50px", color:"white", paddingTop:"20px"}}> EPK </div>
+			<div style={{fontSize:"50px", color:"white"}}> EPK </div>
 
 			<div className='top-info'>
 
@@ -110,7 +125,7 @@ const Epk = () => {
 					Ella Rossi, the new and upcoming artist from San Deigo, CA is making a
 					splash in the RnB world with her unique and smooth sound, capturing
 					the nostalgia of past romances with color and spotenuity of Pop. Ella just released 
-					her debut single "Linen" and set to release her debut EP "Heart Eyes" in August 2023. 
+					her debut single's "Linen" & "Can't You Tell" and set to release her debut EP "Heart Eyes" in August 2023. 
                 </div>
 			</div>
 
