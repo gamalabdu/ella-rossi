@@ -6,7 +6,7 @@ import { AiOutlineYoutube } from 'react-icons/ai'
 import { TbBrandSpotify } from 'react-icons/tb'
 import { FaTiktok } from 'react-icons/fa'
 import './styles.css'
-import { useWindowResize } from '../../util/useWindowResize'
+// import { useWindowResize } from '../../util/useWindowResize'
 
 function Home() {
 
@@ -46,14 +46,16 @@ function Home() {
 
 	// window.onresize();
 
-	const resize = useWindowResize
+	// const resize = useWindowResize
 
-	resize()
+	// resize()
 
 
 	return (
 		<div className='home-container'>
+
 			<video src={linenVideo} autoPlay loop muted playsInline={true} disablePictureInPicture={true} />
+
 			<h1>ELLA ROSSI</h1>
 			{/* <p> "Linen" Out Now </p> */}
 
