@@ -7,6 +7,8 @@ import { TbBrandSpotify } from 'react-icons/tb'
 import { FaTiktok } from 'react-icons/fa'
 import './styles.css'
 // import { useWindowResize } from '../../util/useWindowResize'
+import front from '../../assets/front.png'
+import back from '../../assets/back.png'
 
 function Home() {
 
@@ -18,10 +20,7 @@ function Home() {
 		tiktok: 'https://www.tiktok.com/@ellarossimusic',
 	}
 
-	// makes the page start at the top of the page
-	// useEffect(() => {
-	//   window.scrollTo(0, 0)
-	// }, [])
+
 
 	const goToLink = (linkType: string) => {
 		switch (linkType) {
@@ -38,29 +37,29 @@ function Home() {
 		}
 	}
 
-	// const heightOutput = document.querySelector("#height");
-
-	// window.onresize = function() {
-	// 	document.body.height = window.innerHeight;
-	// }
-
-	// window.onresize();
-
-	// const resize = useWindowResize
-
-	// resize()
 
 
 	return (
 		<div className='home-container'>
+			{/* <video src={linenVideo} autoPlay loop muted playsInline={true} disablePictureInPicture={true} /> */}
 
-			<video src={linenVideo} autoPlay loop muted playsInline={true} disablePictureInPicture={true} />
+			
+
+			<div className='flip-card'>
+				<div className='flip-card-inner'>
+					<div className='flip-card-front'>
+					    <img className='front' src={front} style={{ height:"100%" , width:"100%"}} />
+					</div>
+					<div className='flip-card-back' style={{ height:"100%" , width:"100%", display:"flex", justifyContent:"center", alignItems:"center", textAlign:"center"}} >
+						{/* <img className='back' src={back} style={{ height:"100%" , width:"100%"}} /> */}
+						Welcome 
+					</div>
+				</div>
+			</div>
 
 			<h1>ELLA ROSSI</h1>
-			{/* <p> "Linen" Out Now </p> */}
 
-			<div
-				className='artistSocialsContainer'>
+			<div className='artistSocialsContainer'>
 				<button className='artistSocials' onClick={() => goToLink('instagram')}>
 					<FaInstagram />
 				</button>
