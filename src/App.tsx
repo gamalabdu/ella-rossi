@@ -14,8 +14,7 @@ import Gallery from './components/Gallery/Gallery';
 function App() {
   return (
     <div className="App">
-      <SafeAreaView>
-        <BrowserRouter>
+      <SafeAreaView>  
         <Routes>
           <Route path="/" element={<Main />}>
             <Route index element={<Home />} />
@@ -27,7 +26,6 @@ function App() {
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>
-        </BrowserRouter>
       </SafeAreaView>
     </div>
   );
