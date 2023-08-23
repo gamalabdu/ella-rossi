@@ -23,7 +23,6 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="epk" element={<Epk />} />
-            {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>
       </SafeAreaView>
