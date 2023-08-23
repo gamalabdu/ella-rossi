@@ -7,7 +7,7 @@ const About = () => {
 	return (
 		<div className='about-container'>
 
-			<img className='video' src={cantYouTell} style={{ filter: "brightness(60%)", WebkitFilter: "brightness(80%)" }} />
+			<img className='video' src={cantYouTell} style={{ filter: "brightness(50%)", WebkitFilter: "brightness(50%)" }} />
 
 			<div className='about-container-2'>
 
