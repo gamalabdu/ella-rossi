@@ -6,7 +6,6 @@ import { AiOutlineYoutube } from 'react-icons/ai'
 import { TbBrandSpotify } from 'react-icons/tb'
 import { FaTiktok } from 'react-icons/fa'
 import './styles.css'
-// import { useWindowResize } from '../../util/useWindowResize'
 import front from '../../assets/front.png'
 import back from '../../assets/back.png'
 

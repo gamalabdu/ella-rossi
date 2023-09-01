@@ -55,7 +55,7 @@ const Gallery = () => {
         {
           galleryPhotos.map(photo => {
             return (
-              <SwiperSlide key={photo.count}><div className='carousel-photo'><img src={photo.src}/></div></SwiperSlide>
+              <SwiperSlide key={photo.count}><div className='carousel-photo'><img draggable={false} src={photo.src}/></div></SwiperSlide>
             )
           })
         }

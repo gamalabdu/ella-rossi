@@ -1,16 +1,12 @@
-import React, { useState } from 'react'
 import './styles.css'
-import { Link, Outlet, Route, Router } from 'react-router-dom'
-import About from '../About/About'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
-
-	const [showNav, setShowNav] = useState<boolean>(false)
 
 
 	return (
 		
-			<div className= 'content'>
+		<div className= 'content'>
 			<nav role='navigation'>
 				<div className= 'menuToggle'>
 					<input type='checkbox' />
