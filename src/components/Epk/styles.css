@@ -112,6 +112,7 @@
 
   .works {
     display: flex;
+    display: -webkit-flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,7 +130,7 @@
   }
 
   .works-tile > img {
-    width: 12vw;
+    max-width: 12vw;
   }
 
   .works-info {
