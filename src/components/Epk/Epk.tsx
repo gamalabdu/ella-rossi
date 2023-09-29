@@ -11,13 +11,13 @@ import './styles.css'
 
 const Epk = () => {
 	const works = [
-		{
-			title: 'Fairytale',
-			type: 'spotify',
-			year: '2020',
-			link: 'https://open.spotify.com/track/1SMggtx9BCKMmRt46z42FU?si=debf3e9dd9af47c9',
-			albumWork: require('../../assets/pictures/fairytale.png'),
-		},
+		// {
+		// 	title: 'Fairytale',
+		// 	type: 'spotify',
+		// 	year: '2020',
+		// 	link: 'https://open.spotify.com/track/1SMggtx9BCKMmRt46z42FU?si=debf3e9dd9af47c9',
+		// 	albumWork: require('../../assets/pictures/fairytale.png'),
+		// },
 		{
 			title: 'Linen',
 			year: '2023',
@@ -31,6 +31,20 @@ const Epk = () => {
 			year: '2023',
 			link: 'https://open.spotify.com/track/5vQMG5R1AKVHlQvpeUdG4l?si=6f17d94f9ae24cfb',
 			albumWork: require('../../assets/pictures/cantyoutell.jpeg'),
+		},
+		{
+			title: "Scared To Love",
+			type: 'spotify',
+			year: '2023',
+			link: 'https://open.spotify.com/track/41LJWtSAOjSXe2ishYcgTh?si=1d3ca200ca00438c',
+			albumWork: require('../../assets/pictures/ScaredToLoveHQ.jpeg'),
+		},
+		{
+			title: "Heart Eyes",
+			type: 'spotify',
+			year: '2023',
+			link: 'https://open.spotify.com/track/41LJWtSAOjSXe2ishYcgTh?si=1d3ca200ca00438c',
+			albumWork: 'https://drive.google.com/uc?id=1gTKD-1XwPhEmxca8iYktIbvjiCAH8_mI',
 		},
 	]
 
@@ -101,9 +115,10 @@ const Epk = () => {
 
 			<div className='epk-inner'>
 
-				<div style={{ fontSize: '3em', color: 'white' }}> EPK </div>
+			<div className='epk-sign'> EPK </div>
 
 				<div className='top-info'>
+
 					<div className='cover-art'>
 						<img src={ellaArtistCover} />
 					</div>
@@ -117,6 +132,7 @@ const Epk = () => {
 							<div>Vocalist</div>
 						</div>
 					</div>
+
 				</div>
 
 				<div className='bio'>
@@ -130,14 +146,15 @@ const Epk = () => {
 				</div>
 
 				<div className='works'>
-					{works.map((work) => {
+					{
+					
+					works.map((work) => {
 						return (
 							<div key={work.title} className='works-tile'>
 								<img src={work.albumWork} />
 								<div className='works-info'>
 									<div>{work.title}</div>
 									<div> Single · {work.year} </div>
-									{/* <div style={{ fontSize:"10px"}}> Main Artist, Song-writer </div> */}
 								</div>
 								<div
 									className='metric-icon-play'
@@ -166,7 +183,11 @@ const Epk = () => {
 						)
 					})}
 				</div>
+
+
 			</div>
+
+			
 		</div>
 	)
 }

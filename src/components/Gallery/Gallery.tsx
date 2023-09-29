@@ -11,7 +11,7 @@ const Gallery = () => {
   const galleryPhotos = [
     {
       count: 1,
-      src : require("../../assets/pictures/GalleryPhotos/1.jpg")
+      src : require("../../assets/pictures/GalleryPhotos/IMG_8898.jpeg")
     },
     {
       count: 2,
@@ -24,6 +24,22 @@ const Gallery = () => {
     {
       count: 4,
       src : require("../../assets/pictures/GalleryPhotos/4.jpg")
+    },
+    {
+      count: 5,
+      src : require("../../assets/pictures/GalleryPhotos/IMG_1567.jpeg")
+    },
+    {
+      count: 6,
+      src : require("../../assets/pictures/GalleryPhotos/IMG_6990.jpeg")
+    },
+    {
+      count: 7,
+      src : require("../../assets/pictures/GalleryPhotos/IMG_6993.jpeg")
+    },
+    {
+      count: 8,
+      src : require("../../assets/pictures/GalleryPhotos/IMG_6942.jpeg")
     },
   ]
 
@@ -55,7 +71,7 @@ const Gallery = () => {
         {
           galleryPhotos.map(photo => {
             return (
-              <SwiperSlide key={photo.count}><div className='carousel-photo'><img src={photo.src}/></div></SwiperSlide>
+              <SwiperSlide key={photo.count}><div className='carousel-photo'><img draggable={false} aria-hidden={true} src={photo.src}/></div></SwiperSlide>
             )
           })
         }

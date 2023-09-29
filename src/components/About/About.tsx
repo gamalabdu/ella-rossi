@@ -13,8 +13,23 @@ const About = () => {
 
 				<div className='about-title'>ABOUT</div>
 
+              <div className='quotes-container'>
+				<div className='quote'>
+					"She has established herself as a rising star in the music industry" - Earmilk
+				</div>
+				<div className='quote'>
+					"...One listen to the California native's voice, and you'll be hooked." - Sheesh Media
+				</div>
+				<div className='quote'>
+					"... We can't help but praise her innate ability to craft stunning narratives." - CLOUT
+				</div>
+				<div className='quote'>
+					"A captivating artist poised to leave an indelible mark on the music industry." - Celebmix
+				</div>
+			  </div>
+
 				<div className='about-text'>
-					<div>
+					<div className='inner-text'>
 					<span className='ella'>Ella’s</span> singing career began at the ripe
 					age of 9, and got a taste of stardom after she made her first
 					international television appearance at the age of 9 years old. Growing
