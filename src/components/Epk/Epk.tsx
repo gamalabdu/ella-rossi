@@ -23,12 +23,14 @@ const Epk = () => {
 			year: '2023',
 			link: 'https://open.spotify.com/track/24EpMJ93iYXIWLiCjfXtWx?si=6cf6dd57bbb342d4',
 			type: 'spotify',
+			release: 'Single',
 			albumWork: require('../../assets/pictures/linen.jpeg'),
 		},
 		{
 			title: "Can't You Tell",
 			type: 'spotify',
 			year: '2023',
+			release: 'Single',
 			link: 'https://open.spotify.com/track/5vQMG5R1AKVHlQvpeUdG4l?si=6f17d94f9ae24cfb',
 			albumWork: require('../../assets/pictures/cantyoutell.jpeg'),
 		},
@@ -36,6 +38,7 @@ const Epk = () => {
 			title: "Scared To Love",
 			type: 'spotify',
 			year: '2023',
+			release: 'Single',
 			link: 'https://open.spotify.com/track/41LJWtSAOjSXe2ishYcgTh?si=1d3ca200ca00438c',
 			albumWork: require('../../assets/pictures/ScaredToLoveHQ.jpeg'),
 		},
@@ -43,6 +46,7 @@ const Epk = () => {
 			title: "Heart Eyes",
 			type: 'spotify',
 			year: '2023',
+			release: 'EP',
 			link: 'https://open.spotify.com/track/41LJWtSAOjSXe2ishYcgTh?si=1d3ca200ca00438c',
 			albumWork: 'https://drive.google.com/uc?id=1gTKD-1XwPhEmxca8iYktIbvjiCAH8_mI',
 		},
@@ -154,7 +158,7 @@ const Epk = () => {
 								<img src={work.albumWork} />
 								<div className='works-info'>
 									<div>{work.title}</div>
-									<div> Single · {work.year} </div>
+									<div> {work.release} · {work.year} </div>
 								</div>
 								<div
 									className='metric-icon-play'
