@@ -118,8 +118,8 @@
     justify-content: center;
     align-items: center;
     color: white;
-    height: 35%;
-    overflow: scroll;
+    /* height: 35%; */
+    /* overflow: scroll; */
   }
 
   .works-tile {
@@ -127,6 +127,7 @@
     flex-direction: row;
     vertical-align: middle;
     align-items: center;
+    padding: 10px;
   }
 
   .works-tile > img {
