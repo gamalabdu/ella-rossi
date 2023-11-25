@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,lazy, Suspense } from 'react'
 import './styles.css'
 import linenVideo from '../../assets/videos/linen.mp4'
 import { FaInstagram } from 'react-icons/fa'
@@ -9,6 +9,12 @@ import './styles.css'
 import christmas from '../../assets/pictures/christmastime.png'
 import front from '../../assets/front.png'
 import back from '../../assets/back.png'
+
+
+const LazyFaInstagram = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaInstagram })));
+const LazyAiOutlineYoutube = lazy(() => import('react-icons/ai').then(module => ({ default: module.AiOutlineYoutube })));
+const LazyTbBrandSpotify = lazy(() => import('react-icons/tb').then(module => ({ default: module.TbBrandSpotify })));
+const LazyFaTiktok = lazy(() => import('react-icons/fa').then(module => ({ default: module.FaTiktok })));
 
 function Home() {
 
@@ -78,16 +84,16 @@ function Home() {
 
 			<div className='artistSocialsContainer'>
 				<button className='artistSocials' onClick={() => goToLink('instagram')}>
-					<FaInstagram />
+					<LazyFaInstagram />
 				</button>
 				<button className='artistSocials' onClick={() => goToLink('youtube')}>
-					<AiOutlineYoutube />
+					<LazyAiOutlineYoutube />
 				</button>
 				<button className='artistSocials' onClick={() => goToLink('spotify')}>
-					<TbBrandSpotify />
+					<LazyTbBrandSpotify />
 				</button>
 				<button className='artistSocials' onClick={() => goToLink('tiktok')}>
-					<FaTiktok />
+					<LazyFaTiktok />
 				</button>
 			</div>
 
