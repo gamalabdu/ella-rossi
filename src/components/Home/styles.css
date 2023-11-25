@@ -26,10 +26,13 @@ video {
     overflow-x : hidden;
 }
 
-.home-container > h1 {
+.header-title {
 	color: #fff;
-	font-size: 12vmin;
+	width: 100%;
+	font-size: 5vw;
 }
+
+
 
 .home-container > p {
 	margin-top: 8px;
@@ -39,7 +42,7 @@ video {
 
 .artistSocialsContainer {
 	position: absolute;
-	top: 90%;
+	top: 95%;
 	z-index: 0;
 	display: flex;
 	flex-direction: row;
@@ -55,12 +58,49 @@ video {
 	color: white;
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 .artistSocials:hover {
 	transition: all 0.5s ease-in-out;
 	transform: scale(4);
 }
+
+.latest-text {
+	color: rgb(237, 74, 74);
+}
+
+.latest-cover-art-container {
+	cursor: pointer;
+	transition: scale 300ms ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center child elements vertically */
+	justify-content: center; /* Center child elements horizontally */
+	scale: calc(1);
+	transition: scale 300ms ease-in-out;
+  }
+  
+  .latest-cover-art-container:hover {
+	scale: calc(1.1);
+	transition: scale 300ms ease-in-out;
+  }
+  
+  .latest-cover-art-wrapper {
+	max-width: 100%;
+	width: 100%; /* Take full width of the container */
+	text-align: center; /* Center the image horizontally */
+  }
+  
+  .latest-cover-art {
+	max-width: 50%;
+	height: auto;
+  }
+  
+  /* ... (existing styles) */
+  
+
+
 
 
 

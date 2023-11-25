@@ -55,6 +55,7 @@
 .carousel-photo{
   height: 100%;
   max-width: 100%;
+  user-select: none;
 }
 
 .swiper-button-next {
