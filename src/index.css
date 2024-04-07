@@ -12,7 +12,7 @@
   font-family: Bebas Neue;
   width: 100dvw;
   height: 100dvh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @media (max-width: 768px) {
