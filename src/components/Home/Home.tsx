@@ -153,9 +153,13 @@ function Home() {
 
 	return (
 		<div className='home-container'>
+
+
 			<div
 				className={`flip-card ${isFlipped.card1 ? 'flipped' : ''}`}
-				onClick={() => toggleFlip('card1')}>
+				onClick={() => toggleFlip('card1')}
+				style={{ marginTop:"24px"}}
+				>
 				<div className='flip-card-inner'>
 					<div className='flip-card-front'>
 						<img src={front} style={{ height: '100%', width: '100%' }} />
@@ -184,6 +188,11 @@ function Home() {
 					</div>
 				</div>
 			</div>
+
+
+				  <div className='latest-text'>
+					"Heart Eyes" available in all streaming platforms{' '}
+	</div>
 
 			<div className='artistSocialsContainer'>
 				<button className='artistSocials' onClick={() => goToLink('instagram')}>
