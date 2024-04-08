@@ -80,8 +80,8 @@ video {
 	height: 50%;
 	width: 50%;
 	flex-direction: column;
-	align-items: center; /* Center child elements vertically */
-	justify-content: center; /* Center child elements horizontally */
+	align-items: center; 
+	justify-content: center; 
 	scale: calc(1);
 	transition: scale 300ms ease-in-out;
   }
@@ -93,8 +93,8 @@ video {
   
   .latest-cover-art-wrapper {
 	max-width: 100%;
-	width: 100%; /* Take full width of the container */
-	text-align: center; /* Center the image horizontally */
+	width: 100%;
+	text-align: center; 
   }
   
   .latest-cover-art {
@@ -102,19 +102,13 @@ video {
 	height: auto;
   }
   
-  /* ... (existing styles) */
-  
-
-
-
-
 
 
 .flip-card {
 	background-color: transparent;
 	width: 400px;
 	height: 250px;
-	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	perspective: 1000px;
   }
 
 
@@ -122,10 +116,10 @@ video {
 	background-color: transparent;
 	width: 350px;
 	height: 350px;
-	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	perspective: 1000px;
   }
   
-  /* This container is needed to position the front and back side */
+
   .flip-card-inner {
 	position: relative;
 	width: 100%;
@@ -136,27 +130,43 @@ video {
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  /* .flip-card:hover .flip-card-inner {
 	transform: rotateY(180deg);
   }
 
   .flip-card-art:hover .flip-card-inner {
 	transform: rotateY(180deg);
   }
-  
-  /* Position the front and back side */
+   */
+
+
+
   .flip-card-front, .flip-card-back {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	-webkit-backface-visibility: hidden; /* Safari */
+	-webkit-backface-visibility: hidden; 
 	backface-visibility: hidden;
 	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
   
   
-  /* Style the back side */
+  /* .flip-card-back {
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 74, 74);
+	transform: rotateY(180deg);
+  } */
+
+
+
+
   .flip-card-back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
 	background-color: rgb(255, 255, 255);
 	color: rgb(255, 74, 74);
 	transform: rotateY(180deg);
@@ -164,15 +174,15 @@ video {
 
 
 
+  .flip-card.flipped .flip-card-inner,
+.flip-card-art.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
 
 
 
 @media screen and (max-width: 960px) {
-
-	/* .home-container > h1 {
-		font-size: 70px;
-	} */
 
 	video {
 		object-fit: cover;
@@ -189,9 +199,35 @@ video {
 		gap: 40%,
 	}
 
-	/* .home-container > h1 {
-		font-size: 50px;
-	} */
+	.home-container > p {
+		font-size: 30px;
+	}
+
+	video {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: -1;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+
+	.flip-card {
+		width: 300px;
+		height: 170px;
+	}
+
+	.flip-card-art {
+		width: 250px;
+		height: 250px;
+	  }
+
+	.artistSocialsContainer {
+		gap: 40%,
+	}
 
 	.home-container > p {
 		font-size: 30px;
