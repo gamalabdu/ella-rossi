@@ -48,7 +48,7 @@ const Epk = () => {
 			year: '2023',
 			release: 'EP',
 			link: 'https://open.spotify.com/track/41LJWtSAOjSXe2ishYcgTh?si=1d3ca200ca00438c',
-			albumWork: 'https://drive.google.com/uc?id=1gTKD-1XwPhEmxca8iYktIbvjiCAH8_mI',
+			albumWork: require('../../assets/pictures/HeartEyesOfficialCoverArt.jpeg'),
 		},
 	]
 
