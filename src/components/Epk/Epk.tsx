@@ -11,13 +11,6 @@ import './styles.css'
 
 const Epk = () => {
 	const works = [
-		// {
-		// 	title: 'Fairytale',
-		// 	type: 'spotify',
-		// 	year: '2020',
-		// 	link: 'https://open.spotify.com/track/1SMggtx9BCKMmRt46z42FU?si=debf3e9dd9af47c9',
-		// 	albumWork: require('../../assets/pictures/fairytale.png'),
-		// },
 		{
 			title: 'Linen',
 			year: '2023',
@@ -155,7 +148,7 @@ const Epk = () => {
 					works.map((work) => {
 						return (
 							<div key={work.title} className='works-tile'>
-								<img src={work.albumWork} />
+								<img style={{ height:"50%", width:"50%"}} src={work.albumWork} />
 								<div className='works-info'>
 									<div>{work.title}</div>
 									<div> {work.release} · {work.year} </div>
